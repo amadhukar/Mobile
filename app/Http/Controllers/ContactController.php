@@ -41,6 +41,10 @@ class ContactController extends Controller {
 	public function store()
 	{
 		//
+		$contact=Contact::create(Input::all()); 
+
+		return Response::json($contact); 
+
 	}
 
 	/**
