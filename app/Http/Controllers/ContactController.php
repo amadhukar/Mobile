@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Contact; 
 use Response; 
+use Input;
 
 
 class ContactController extends Controller {
@@ -41,9 +42,9 @@ class ContactController extends Controller {
 	public function store()
 	{
 		//
-		//$contact=Contact::create(Input::all()); 
+		$contact=Contact::create(Input::all()); 
 
-		return Response::json(Input::all()); 
+		return Response::json($contact); 
 
 	}
 
