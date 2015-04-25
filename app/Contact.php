@@ -9,7 +9,7 @@ class Contact extends Model {
 		'firstname',
 		'lastname',
 		'phonenumber',
-		'email'
+		'contactemail'
 
 	]; 
 
