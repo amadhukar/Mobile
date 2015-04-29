@@ -12,6 +12,12 @@ class TestController extends Controller {
 	public function instagram()
 	{
 		return view("test.instagram"); 
+		//return redirect('http://www.google.com'); 
+	}
+
+	public function instahook()
+	{
+		return redirect('instagram://camera'); 
 	}
 
 }

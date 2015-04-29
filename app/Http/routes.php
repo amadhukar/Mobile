@@ -20,5 +20,7 @@ Route::group(['prefix'=>'api'],function(){
 
 Route::get('instagramshare','TestController@instagram'); 
 
+Route::get('testinstagram','TestController@instahook'); 
+
 
 
