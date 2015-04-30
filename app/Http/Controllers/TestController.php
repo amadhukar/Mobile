@@ -23,7 +23,7 @@ class TestController extends Controller {
 
 	public function sendemail()
 	{
-		Mail::send('emails.testing',function($message){
+		Mail::send('emails.testing',[],function($message){
 
 			$message->to('a.madhukar@yahoo.com','Aj')->subject('Testing'); 
 
