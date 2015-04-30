@@ -4,6 +4,7 @@ use App\Http\Requests;
 use App\Http\Controllers\Controller;
 
 use Illuminate\Http\Request;
+use Mail; 
 
 class TestController extends Controller {
 
@@ -18,6 +19,15 @@ class TestController extends Controller {
 	public function instahook()
 	{
 		return redirect('instagram://camera'); 
+	}
+
+	public function sendemail()
+	{
+		Mail::send('emails.testing',function($message){
+
+			$message->to('a.madhukar@yahoo.com','Aj')->subject('Testing'); 
+
+		}); 
 	}
 
 }
