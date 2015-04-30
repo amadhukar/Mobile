@@ -25,7 +25,7 @@ class TestController extends Controller {
 	{
 		Mail::send('emails.testing',[],function($message){
 
-			$message->to('a.madhukar@yahoo.com','Aj')->subject('Testing'); 
+			$message->to('a.madhukar@yahoo.com')->subject('Testing'); 
 
 		}); 
 	}
